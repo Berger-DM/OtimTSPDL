@@ -14,3 +14,4 @@ subject to atendimento forall{j in 2..v}: sum{i in V} y[i, j] - sum{i in V} y[j,
 subject to devidamente: sum{j in V} y[1, j] = sum{i in V} D[i];
 subject to vazia: sum{i in V} y[i, 1] = 0;
 subject to limites forall{i in V, j in V}: y[i, j] <= L[j] * x[i, j];
+end;
