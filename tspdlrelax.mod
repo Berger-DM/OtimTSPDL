@@ -2,7 +2,7 @@ param v;
 set V := 1..v;
 var x{i in V, j in V}, binary;
 var y{i in V, j in V}, >= 0;
-set C;
+param c;
 set D;
 set L;
 
